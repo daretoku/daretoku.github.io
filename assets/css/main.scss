@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.banner {
+max-height: 400px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

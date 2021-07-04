@@ -10,17 +10,17 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "誰得Blog"
+title                    : "誰得＠Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "誰得"
-description              : "いつか私得と言われるように"
+description              : "いつか私得と言われる日がくるように"
 url                      : "https://daretoku.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "daretoku/daretoku.github.io"
@@ -273,6 +273,17 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: false
+        
+  - scope:
+      path: ""
+      type: tags
     values:
       layout: single
       author_profile: false
