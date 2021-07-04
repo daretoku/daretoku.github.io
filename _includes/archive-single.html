@@ -31,8 +31,8 @@
       <p class="page__taxonomy">
         <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
         <span itemprop="keywords">
-        {% for tag_word in page.tags %}
-          {{page.tags}}
+        {% for tag_word in post.tags %}
+          {{post.tags}}
           {{ tag_word }}<br>
         {% endfor %}
           </span>
